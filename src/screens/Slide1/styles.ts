@@ -9,8 +9,23 @@ export const styles = StyleSheet.create({
         backgroundColor: 'rgba(255,255,255, 0.5)',
         alignItems: 'center',
         justifyContent: 'center'
-    },
-    img: {
 
+    },
+    titulo:{
+        fontSize: 50,
+    },
+    
+    botoes:{
+        flexDirection: "row",
+        justifyContent: "space-around", 
+        alignItems: "center"
+
+
+    },
+
+    estilo:{
+        flex: 1,
+        justifyContent: 'center',
     }
+   
 })
