@@ -3,8 +3,7 @@ import { styles } from './styles'
 import { Button } from '../../components/Botao'
 import { IPage } from '../../../App'
 
-
-export function Slide1({ setPage }: IPage) {
+export function Slide1({ setPage, page }: IPage) {
     const slide = require('../../assets/slide1.png')
     const delivery = require('../../assets/delivery-truck 1.png')
     return (
@@ -13,12 +12,12 @@ export function Slide1({ setPage }: IPage) {
                 <View style={styles.estilo}>
                     <Image source={delivery} />
                     <Text style={styles.titulo}>Eficiência</Text>
- 
                 </View>
-
                 <View style={styles.botoes}>
-                    <Button onPress={() => setPage(1)} />
-                    <Button onPress={() => setPage(2)} />
+                    <Button cor={page == 1} onPressI={() => setPage(1)} />
+                    <Button cor={page == 2} onPressI={() => setPage(2)} />
+                    <Button cor={page == 3} onPressI={() => setPage(3)} />
+                    <Button cor={page == 4} onPressI={() => setPage(4)} />
                 </View>
             </View>
         </ImageBackground>
