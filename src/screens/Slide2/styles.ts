@@ -18,7 +18,9 @@ export const styles = StyleSheet.create({
     botoes:{
         flexDirection: "row",
         justifyContent: "space-around", 
-        alignItems: "center"
+        alignItems: "center",
+        width:350,
+        paddingBottom:30
 
 
     },
